@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karan Hotwani | Portfolio</title>
+  <meta name="description" content="Portfolio of Karan Hotwani, Backend Engineer with 6 years of experience building scalable, high-performance systems and delivering data-driven solutions.">
+  <meta name="keywords" content="Backend Engineer, Node.js, Microservices, PostgreSQL, AWS, GCP, Portfolio">
+  <meta property="og:title" content="Karan Hotwani | Portfolio">
+  <meta property="og:description" content="Backend Engineer | Node.js | Microservices | System Design | Cloud-Native Solutions">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== Base Styles ===== */
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #1E1B16; /* dark warm background */
+      color: #F5F5F5;
+      scroll-behavior: smooth;
+    }
+    h1, h2, h3 { margin: 0; }
+    a { text-decoration: none; }
+
+    section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(135deg, #3C2F2F, #1E1B16);
+      color: #FDE68A;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+    }
+    .hero h1 { font-size: 3rem; animation: fadeInDown 1s ease; }
+    .hero p { margin: 1rem 0; font-size: 1.2rem; animation: fadeInUp 1.2s ease; }
+    .hero-buttons { margin-top: 1.5rem; }
+    .hero-buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .btn-primary {
+      background: #F59E0B;
+      color: #1E1B16;
+    }
+    .btn-primary:hover { background: #D97706; transform: scale(1.05); }
+    .btn-secondary {
+      border: 2px solid #F59E0B; color: #F59E0B;
+    }
+    .btn-secondary:hover { background: #F59E0B; color: #1E1B16; transform: scale(1.05); }
+
+    /* ===== Section Headings ===== */
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      position: relative;
+      color: #FDE68A;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: #F59E0B;
+      margin: 8px auto 0;
+      border-radius: 2px;
+    }
+
+    /* ===== Cards ===== */
+    .card {
+      background: rgba(60, 47, 47, 0.9);
+      backdrop-filter: blur(8px);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      margin-bottom: 1.5rem;
+      opacity: 0; transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .card.visible { opacity: 1; transform: translateY(0); }
+    .card h3 { color: #F59E0B; margin-bottom: .5rem; }
+
+    /* ===== Skills ===== */
+    .skills span {
+      display: inline-block;
+      background: #F59E0B;
+      color: #1E1B16;
+      margin: 6px;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .skills span:hover { transform: scale(1.05); background: #D97706; color: white; }
+
+    /* ===== Contact ===== */
+    #contact { text-align: center; }
+    #contact a {
+      color: #F59E0B; /* amber by default */
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    #contact a:hover {
+      color: #ffffff; /* white on hover */
+    }
+    .social-links a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      background: #F59E0B;
+      color: #1E1B16;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .social-links a:hover { background: #D97706; color: white; }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #111010;
+      color: #aaa;
+      margin-top: 3rem;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Karan Hotwani</h1>
+    <p>Backend Engineer | 6 Years Experience | Node.js | Microservices | PostgreSQL | AWS | GCP</p>
+    <div class="hero-buttons">
+      <a href="#experience" class="btn-primary">See My Work</a>
+      <a href="KARAN_HOTWANI_CV.pdf" class="btn-secondary" target="_blank">Download Resume</a>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Profile Summary</h2>
+    <div class="card">
+      <p>
+        Backend Engineer with 6 years of experience building scalable, high-performance systems and delivering data-driven solutions. 
+        Skilled in modern backend technologies and passionate about solving complex problems to drive business impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <div class="skills">
+        <span>Node.js</span><span>Fastify</span><span>Express</span><span>Hasura</span><span>GraphQL</span>
+        <span>PostgreSQL</span><span>Microservices</span><span>System Design</span><span>AWS</span><span>GCP</span>
+        <span>NoSQL</span><span>Firebase</span><span>React.js</span><span>API Integration</span>
+        <span>Analytical Thinking</span><span>Problem Solving</span><span>System Optimization</span>
+        <span>Collaboration</span><span>Agile</span><span>Communication</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="card">
+      <h3>Foodmarkethub</h3>
+      <strong>Senior Backend Engineer | March 2022 – Present</strong>
+      <ul>
+        <li>Architected and deployed backend systems from scratch using Node.js, PostgreSQL, and microservices, scaling to support high-volume transactions.</li>
+        <li>Spearheaded RESTful APIs and Hasura GraphQL services, improving integration speed and developer productivity.</li>
+        <li>Optimized PostgreSQL queries and refactored services, improving system efficiency by 30%.</li>
+        <li>Designed reporting pipelines with AWS Glue, S3, and Athena, reducing data export times by ~98%.</li>
+        <li>Collaborated with product, frontend, and QA teams to translate complex requirements into customer-focused solutions.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Easeyourlife</h3>
+      <strong>Backend Engineer | July 2019 – February 2022</strong>
+      <ul>
+        <li>Built and optimized RESTful APIs and database models with Node.js, Express & Firebase.</li>
+        <li>Integrated third-party services and implemented unit testing, while independently managing backend infrastructure.</li>
+        <li>Gained experience with GCP, Firebase stack, NoSQL databases, payment integrations, Flutter, GraphQL, etc.</li>
+        <li>Collaborated directly with founders and operations to translate requirements into backend solutions.</li>
+        <li>Troubleshot and resolved technical issues, improving system reliability and operational stability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>VES Institute of Technology, Mumbai University</h3>
+      <p>Bachelor of Information Technology | CGPA: 7.8/10 | June 2019</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:karanhotwani.kh@gmail.com">karanhotwani.kh@gmail.com</a></p>
+      <p>Phone: +91 9960497094</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/karan-hotwani-a9ba73167" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Karan Hotwani</p>
+  </footer>
+
+  <script>
+    // Reveal animation on scroll
+    const cards = document.querySelectorAll('.card');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      cards.forEach(card => {
+        const boxTop = card.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          card.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
